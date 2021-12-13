@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyện tập if else 2</title>
+</head>
+<body>
+<!--Bài 1-->
+<!--<div><b>Chuyển từ độ C sang độ F</b></div>-->
+<!--<script>-->
+<!--    let C = parseInt((prompt("Nhập độ C")));-->
+<!--    let F = 1.8 * C + 32;-->
+<!--    alert(F + " Độ F ");-->
+<!--</script>-->
+
+<!--Bài 2-->
+<!--<div><b>Chuyển từ mét sang feet</b></div>-->
+<!--<script>-->
+<!--    let m = parseInt((prompt("Nhập độ dài mét")));-->
+<!--    let ft = m * 3.2808;-->
+<!--    alert(ft + "feet");-->
+<!--</script>-->
+
+<!--Bài 3-->
+<!--<div><b>Tính diện tích hình vuông khi biết cạnh a.</b></div>-->
+<!--<script>-->
+<!--    let canha = parseInt(prompt("Nhập độ dài cạnh hình vuông"))-->
+<!--    let S = canha*canha-->
+<!--    alert( "S = " + S )-->
+<!--</script>-->
+
+<!--Bài 4-->
+<!--<div><b>Tính diện tích hình  chữ nhật khi biết 02 cạnh a, b</b></div>-->
+<!--<script>-->
+<!--    let canha = parseInt(prompt("Nhập chiều dài"))-->
+<!--    canhb = parseInt(prompt("Nhập chiều rộng"))-->
+<!--    let S = canha*canhb-->
+<!--    alert( "S = " + S )-->
+<!--</script>-->
+
+<!--Bài 5-->
+<!--<div><b>Tính diện tích tam giác vuông khi biết 02 cạnh kề a, b.</b></div>-->
+<!--<script>-->
+<!--    let canha = parseInt(prompt("Nhập cạnh a"))-->
+<!--    canhb = parseInt(prompt("Nhập cạnh b"))-->
+<!--    let S = (canha*canhb)/2-->
+<!--    alert( "S = " + S )-->
+<!--</script>-->
+
+<!--Bài 6-->
+<!--<div><b>Giải phương trình bậc 1</b></div>-->
+<!--<form>-->
+<!--    Nhập số a: <input type="text" id="a" value=""/> <br/>-->
+<!--    Nhập số b: <input type="text" id="b" value=""/> <br/>-->
+<!--    <span id="result"></span> <br/>-->
+<!--    <input type="button" id="giaiBtn" value="Tìm nghiệm"/>-->
+<!--    <b id="ketqua"></b>-->
+<!--</form>-->
+
+<!--<script>-->
+<!--    let button = document.getElementById('giaiBtn');-->
+<!--    giaiBtn.onclick = function(){-->
+<!--        let a = document.getElementById('a').value;-->
+<!--        let b = document.getElementById('b').value;-->
+
+<!--        if (a == "" || b == ""){-->
+<!--            document.getElementById("ketqua").innerHTML = "Vui lòng nhập dữ liệu"-->
+<!--        }-->
+<!--        else {-->
+<!--            a = Number(a);-->
+<!--            b = Number(b);-->
+<!--            giai_pt_bac_nhat(a, b);-->
+<!--        }-->
+<!--    };-->
+
+<!--    function giai_pt_bac_nhat(a, b)-->
+<!--    {-->
+<!--        if (a == 0 && b == 0){-->
+<!--            document.getElementById("ketqua").innerHTML = "Phương trình vô số nghiệm"-->
+<!--        }-->
+<!--        else if (a != 0 && b == 0){-->
+<!--            document.getElementById("ketqua").innerHTML = "Phương trình có nghiệm x=0"-->
+<!--        }-->
+<!--        else if (a == 0 && b != 0){-->
+<!--            document.getElementById("ketqua").innerHTML = "Phương trình vô nghiệm"-->
+<!--        }-->
+<!--        else {-->
+<!--            document.getElementById("ketqua").innerHTML = "Phương trình có nghiệm x = " + (-b/a)-->
+<!--        }-->
+<!--    }-->
+<!--</script>-->
+
+<!--Bài7-->
+<!--<div><b>Giải phương trình bậc 2</b></div>-->
+<!--<form>-->
+<!--    Nhập số a: <input type="text" id="a" value=""/> <br/>-->
+<!--    Nhập số b: <input type="text" id="b" value=""/> <br/>-->
+<!--    Nhập số c: <input type="text" id="c" value=""/> <br/>-->
+<!--    <span id="result"></span> <br/>-->
+<!--    <input type="button" id="giaiBtn" value="Tìm nghiệm"/>-->
+<!--    <div><b id="ketqua"></b></div>-->
+<!--    <div><b id="ketqua2"></b></div>-->
+<!--</form>-->
+<!--<script>-->
+<!--    let button = document.getElementById('giaiBtn');-->
+<!--    giaiBtn.onclick = function() {-->
+<!--        let a = document.getElementById('a').value;-->
+<!--        let b = document.getElementById('b').value;-->
+<!--        let c = document.getElementById('c').value;-->
+<!--        let d = (b * b) - (4 * a * c)-->
+<!--        if (a == 0) {-->
+<!--            if (b == 0) {-->
+<!--                if (c == 0) {-->
+<!--                    document.getElementById("ketqua").innerHTML = "Phương trình vô số nghiệm"-->
+<!--                } else {-->
+<!--                    document.getElementById("ketqua").innerHTML = "Phương trình vô nghiệm"-->
+<!--                }-->
+
+<!--            } else {-->
+<!--                document.getElementById("ketqua").innerHTML = "Phương trình có 1 nghiệm x duy nhất = " + +(-c / b)-->
+<!--            }-->
+<!--        }-->
+<!--        else if(d >= 0){-->
+<!--            document.getElementById("ketqua").innerHTML = "nghiệm x1 của phương trình = "+ ((-b + Math.sqrt(d))) / (2 * a)-->
+<!--            document.getElementById("ketqua2").innerHTML = "nghiệm x2 của phương trình = "+ ((-b + Math.sqrt(d))) / (2 * a)-->
+<!--        }-->
+<!--        else {-->
+<!--            document.getElementById("ketqua").innerHTML = "Phương trình vô nghiệm"-->
+<!--        }-->
+<!--    }-->
+
+<!--</script>-->
+
+<!--bài 8-->
+<!--<div><b>Kiểm tra xem một số nhập vào có phải là tuổi của một người không</b></div>-->
+<!--<input type="text" id="sotuoi" placeholder="Nhập số tuổi" value="">-->
+<!--<button onclick="kiemtra()">Kiểm tra</button>-->
+<!--<p id="ketqua"></p>-->
+<!--<script>-->
+<!--    function kiemtra(){-->
+<!--        let tuoi = parseInt(document.getElementById("sotuoi").value);-->
+<!--        if (tuoi>0 && tuoi<120){-->
+<!--            document.getElementById("ketqua").innerHTML = "Là tuổi của người"-->
+<!--        }else {-->
+<!--            document.getElementById("ketqua").innerHTML = "Không phải là tuổi của người"-->
+<!--        }-->
+<!--    }-->
+<!--</script>-->
+
+<!--Bài 9-->
+<!--<input type="number" id="soa" value="" placeholder="Nhập số A">-->
+<!--<input type="number" id="sob" value="" placeholder="Nhập số B">-->
+<!--<input type="number" id="soc" value="" placeholder="Nhập số C">-->
+<!--<button onclick="number()">OK</button>-->
+<!--<p id="ketqua"></p>-->
+<!--<p id="ketqua2"></p>-->
+<!--<script>-->
+<!--    function number() {-->
+<!--        let canha = parseInt(document.getElementById("soa").value);-->
+<!--        let canhb = parseInt(document.getElementById("sob").value);-->
+<!--        let canhc = parseInt(document.getElementById("soc").value);-->
+
+<!--        if (canha + canhb > canhc && canha + canhc > canhb && canhb + canhc > canha) {-->
+<!--            document.getElementById("ketqua").innerHTML = "A, B, C Là 3 cạnh của 1 tam giác"-->
+<!--        } else {-->
+<!--            document.getElementById("ketqua").innerHTML = " A, B, C Không phải là 3 cạnh của 1 tam giác"-->
+<!--        }-->
+<!--    }-->
+<!--</script>-->
+
+<!--Bài 10-->
+<!--<div><b>Tính giá điện</b></div>-->
+<!--<input type="number" id="sodien" value="" placeholder="Nhập số điện">-->
+<!--<button onclick="number()">OK</button>-->
+<!--<p id="ketqua"></p>-->
+<!--<script>-->
+<!--    function number(){-->
+<!--        let dien = parseInt(document.getElementById("sodien").value);-->
+<!--        let gia1 = dien*1678-->
+<!--        let gia2 = dien*1734-->
+<!--        let gia3 = dien*2014-->
+<!--        let gia4 = dien*2536-->
+<!--        let gia5 = dien*2834-->
+<!--        let gia6 = dien*2927-->
+<!--        if (dien <= 50){-->
+<!--            document.getElementById("ketqua").innerHTML = "Tiền điện của bạn là " + gia1 + "VND"-->
+<!--        }else if(dien<=100){-->
+<!--            document.getElementById("ketqua").innerHTML = "Tiền điện của bạn là " + gia2 + "VND"-->
+
+<!--        }else if(dien<=200){-->
+<!--            document.getElementById("ketqua").innerHTML = "Tiền điện của bạn là " + gia3 + "VND"-->
+
+<!--        }else if(dien<=300){-->
+<!--            document.getElementById("ketqua").innerHTML = "Tiền điện của bạn là " + gia4 + "VND"-->
+
+<!--        }else if(dien<=400){-->
+<!--            document.getElementById("ketqua").innerHTML = "Tiền điện của bạn là " + gia5 + "VND"-->
+
+<!--        }else{-->
+<!--            document.getElementById("ketqua").innerHTML = "Tiền điện của bạn là " + gia6 + "VND"-->
+
+<!--        }-->
+<!--    }-->
+<!--</script>-->
+
+<!--Bài 12-->
+<div><b>Tính lãi suất ngân hàng</b></div>
+<input type="text" id="tienvay" placeholder="Nhập số tiền đã vay" value="">
+<input type="text" id="thangvay" placeholder="Nhập số tháng vay" value="">
+<input type="text" id="laisuat" placeholder="Nhập lãi suất" value="">
+<button onclick="tinhlai()">OK</button>
+<p id="ketqua"></p>
+<script>
+    function tinhlai(){
+        let tien = parseInt(document.getElementById("tienvay").value);
+        let thang = parseInt(document.getElementById("thangvay").value);
+        let lai = parseInt(document.getElementById("laisuat").value);
+        let laithang = lai/12
+        let vaymotthang = tien/(laithang)
+        let vaydaihan = tien*Math.pow((1+laithang), thang)
+        if(thang==1){
+            document.getElementById("ketqua").innerHTML = "Tiền nợ của bạn là " + vaymotthang
+        }else if(thang>=2){
+            document.getElementById("ketqua").innerHTML = "Tiền nợ của bạn là " + vaydaihan
+        }
+    }
+</script>
+</body>
+</html>
